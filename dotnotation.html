@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>javascript dotnotation</title>
+<head>
+</head>
+<body>
+<h1>Access JSON object using dot notation</h1>
+<div id="access"></div>
+<script>
+var obj={
+"firstnamr":"jogu",
+"lastname":"suvarna",
+"address":{
+"address1":"hyderabad",
+"address2":"telangana",
+"address3":"india"
+}
+};
+a1=obj.address.address1;
+a2=obj.address.address2;
+a3=obj.address.address3;
+document.getElementById("access").innerHTML=a1+", "+a2+" ,"+a3;
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>javascript Valadation</title>
+<head>
+<script>
+function validation(){
+var username=document.getElementById("uname");
+var password=document.getElementById("pwd");
+
+if(username.value=="" || password.value=="")
+{
+alert("No blank values allowed");
+return false;
+}
+else
+{
+true;
+}
+}
+</script>
+</head>
+<body>
+<form onsubmit="return validation()">
+<input id="uname" type="text" placeholder="username"></br><br>
+<input id="pwd" type="password" placeholder="password" ><br><br>
+<button type="submit" >submit</botton>
+</form>
+</body>
+</html>

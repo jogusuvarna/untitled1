@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    .required::before{
+    content:'*';
+    background-color:red;
+    }
+   </style>
+</head>
+<body>
+<form>
+    <label class="required">First Name</label>
+    <input type="text" name="first name"><br>
+    <label class="required">Last Name</label>
+    <input type="text" name="last name"><br>
+    <label class="required">Email</label>
+    <input type="text" name="email"><br>
+    <input type="submit">
+</form>
+</body>
+</html>

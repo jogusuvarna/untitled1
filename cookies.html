@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<h1>Cookies</h1>
+<div id="access"></div>
+<form>
+<input id="fname" type="text" name="fullname" placeholder="FullName"><br>
+<input id="mailid" type="text" name="email" placeholder="Email"><br>
+
+<input type="button" value="set cookie" onclick="setcookie()" >
+<input type="button" value="get cookie" onclick="getcookie()">
+</form>
+<script>
+function setcookie(){
+var object={
+document.cookie="name="+document.getElementById("fname").value;
+document.cookie="email="+document.getElementById("mailid").value;
+
+}
+}
+function getcookie(){
+var CookieArray = document.cookie.split(";");
+for(var i=0; i<CookieArray.lenght; i++)
+{
+
+var nameValueArray=CookieArray[i].split("=");
+
+if (nameValueArray[0]==="name")
+{
+document.getElementById["fname"].value=nameValueArray[1];
+}else if (nameValueArray[0] =="email")
+{
+document.getElementById["mailid"].value=nameValueArray[1];
+}
+}
+}
+</script>
+</body>
+</html>

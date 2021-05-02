@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pseudo</title>
+<style>
+.required::before{
+content:'*';
+background-color:red;
+}
+</style>
+</head>
+<body>
+<form>
+Username: <input type="text" name="Username"></br>
+password: <input type="password" name="Password"></br>
+<h5>Gender</h5>
+male: <input type="radio" name="gender"></br>
+female: <input type="radio" name="gender" checked></br></br>
+Hobbies</br> <input type="checkbox" name="hobbies">singing</input>
+<input type="checkbox" name="hobbies">reading</input>
+<input type="checkbox" name="hobbies">browsing</input></br>
+<input type="submit">
+<input type="reset">
+</form>
+</body>
